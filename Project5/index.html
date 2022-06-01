@@ -34,8 +34,12 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+div.logo1{
+  display: inline;
+  position: relative;
+}
 #bg {
-  object-fit: cover;
+  width: 100%;
 
 }
 #logo {
@@ -43,9 +47,54 @@ li a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 10%;
+  width: 6%;
+  position: relative;
+    bottom: 250px;
 }
-    </style>
+h1 {
+  position: absolute;
+    bottom: 199px;
+    right: 30%;
+    font-size: 38px;
+}
+h4{
+    position: relative;
+    bottom: 143px;
+    left: 428px;
+    display: inline-block;
+    font-style: italic;
+    text-align: center;
+    color: #bbbbbb;
+}
+.btn1{
+  background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    bottom: 59px;
+    left: 464px;
+    border-radius: 28px;
+}
+.btn2{
+    background-color: #9aeeff;
+    border: none;
+    color: rgb(11, 11, 11);
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    bottom: 59px;
+    right: 464px;
+    border-radius: 28px;
+}
+</style>
 </head>
 <body>
     <div class="navbar">
@@ -55,9 +104,19 @@ li a {
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
         </ul>
+    </div  >
+    <div class="logo1">
+      <img id="bg" src="bg-header-desktop.png" alt="">
+      <img id="logo" src="logo.svg" alt="">
+      <div class="content">
+        <h1>A History of everything you copy</h1>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.in nostrum exercitationem  
+          <br> accusantium odit. 
+        Placeat aperiam nisi reiciendis fugiat qui.</h4>
+        <button class="btn1">Download for ios</button>
+        <button class="btn2">Download for mac</button>
+      </div>
     </div>
-    <div><img id="bg" src="bg-header-desktop.png" alt="">
-        <img id="logo" src="logo.svg" alt="">
-    </div>
+    
 </body>
 </html>
